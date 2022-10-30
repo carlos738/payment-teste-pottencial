@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\LENOVO\\Documents\\GITHUB\\Aulas_Bootcamp_Pottencial_Dev\\MeusProjetos\\payment-teste-pottencial\\PaymentApi\\PaymentApi.csproj": {}
+    "c:\\Users\\LENOVO\\Documents\\GITHUB\\Aulas_Bootcamp_Pottencial_Dev\\MeusProjetos\\payment-teste-pottencial\\PaymentApi\\PaymentApi.csproj": {}
   },
   "projects": {
-    "C:\\Users\\LENOVO\\Documents\\GITHUB\\Aulas_Bootcamp_Pottencial_Dev\\MeusProjetos\\payment-teste-pottencial\\PaymentApi\\PaymentApi.csproj": {
+    "c:\\Users\\LENOVO\\Documents\\GITHUB\\Aulas_Bootcamp_Pottencial_Dev\\MeusProjetos\\payment-teste-pottencial\\PaymentApi\\PaymentApi.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\LENOVO\\Documents\\GITHUB\\Aulas_Bootcamp_Pottencial_Dev\\MeusProjetos\\payment-teste-pottencial\\PaymentApi\\PaymentApi.csproj",
+        "projectUniqueName": "c:\\Users\\LENOVO\\Documents\\GITHUB\\Aulas_Bootcamp_Pottencial_Dev\\MeusProjetos\\payment-teste-pottencial\\PaymentApi\\PaymentApi.csproj",
         "projectName": "PaymentApi",
-        "projectPath": "C:\\Users\\LENOVO\\Documents\\GITHUB\\Aulas_Bootcamp_Pottencial_Dev\\MeusProjetos\\payment-teste-pottencial\\PaymentApi\\PaymentApi.csproj",
+        "projectPath": "c:\\Users\\LENOVO\\Documents\\GITHUB\\Aulas_Bootcamp_Pottencial_Dev\\MeusProjetos\\payment-teste-pottencial\\PaymentApi\\PaymentApi.csproj",
         "packagesPath": "C:\\Users\\LENOVO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\LENOVO\\Documents\\GITHUB\\Aulas_Bootcamp_Pottencial_Dev\\MeusProjetos\\payment-teste-pottencial\\PaymentApi\\obj\\",
+        "outputPath": "c:\\Users\\LENOVO\\Documents\\GITHUB\\Aulas_Bootcamp_Pottencial_Dev\\MeusProjetos\\payment-teste-pottencial\\PaymentApi\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\LENOVO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -40,6 +40,24 @@
         "net6.0": {
           "targetAlias": "net6.0",
           "dependencies": {
+            "Microsoft.EntityFrameworkCore": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.InMemory": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.SqlServer": {
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
+            "Microsoft.EntityFrameworkCore.Tools": {
+              "include": "Runtime, Build, Native, ContentFiles, Analyzers, BuildTransitive",
+              "suppressParent": "All",
+              "target": "Package",
+              "version": "[6.0.10, )"
+            },
             "Swashbuckle.AspNetCore": {
               "target": "Package",
               "version": "[6.2.3, )"
