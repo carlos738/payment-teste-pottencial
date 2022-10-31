@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "UMhXh32D12Rba9/MJNf7scVB+up8WHYZRbQc+ip9+QqCh6nN97wu3JKhNVDLCZljXqakH7GOMGRtFzC5RuQoAQ==",
+  "dgSpecHash": "BkmbkoUcyJXSiys8s/hdA4s/YnEykGxWrSiiOG1me83tRT8FrLzqDBrJyS/vILGg/iL0WJMUhMFNKZvy7rQgRA==",
   "success": true,
   "projectFilePath": "C:\\Users\\LENOVO\\Desktop\\PROJETO FINAL DO BOOTCAMP POTTENCIAL\\payment-teste-pottencial\\PaymentApi\\PaymentApi.csproj",
   "expectedPackageFiles": [
@@ -47,7 +47,7 @@
     "C:\\Users\\LENOVO\\.nuget\\packages\\system.collections.immutable\\6.0.0\\system.collections.immutable.6.0.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\system.componentmodel.annotations\\4.7.0\\system.componentmodel.annotations.4.7.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\system.configuration.configurationmanager\\4.7.0\\system.configuration.configurationmanager.4.7.0.nupkg.sha512",
-    "C:\\Users\\LENOVO\\.nuget\\packages\\system.data.sqlclient\\4.8.1\\system.data.sqlclient.4.8.1.nupkg.sha512",
+    "C:\\Users\\LENOVO\\.nuget\\packages\\system.data.sqlclient\\4.8.4\\system.data.sqlclient.4.8.4.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\system.diagnostics.diagnosticsource\\6.0.0\\system.diagnostics.diagnosticsource.6.0.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\system.drawing.common\\4.7.0\\system.drawing.common.4.7.0.nupkg.sha512",
     "C:\\Users\\LENOVO\\.nuget\\packages\\system.identitymodel.tokens.jwt\\6.8.0\\system.identitymodel.tokens.jwt.6.8.0.nupkg.sha512",
