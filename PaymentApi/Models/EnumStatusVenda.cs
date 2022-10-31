@@ -3,7 +3,7 @@ namespace PaymentApi.Models
     public enum EnumStatusVenda
     {
         Aguardando_Pagamento,
-        Pgamento_Aprovado,
+        Pagamento_Aprovado,
         Enviado_para_Transportadora,
         Entregue,
         Cancelada,
