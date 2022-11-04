@@ -38,7 +38,7 @@
 
 Minha implementação(conclusão):
 
-Este desafio de projeto foi baseado na contstrução de uma API de pagamento onde usei os conhecimentos adquiridos durante o processo de aprendizagem no bootcamp.
+Este desafio de projeto foi baseado na contstrução de uma API de pagamento onde usei os conhecimentos adquiridos durante o processo de aprendizagem no bootcamp disponibilizado pela Pottencial e pela DIO. 
 Criando uma Api fincional usando os métodos:
 HttPut:
 O Serviço de Integração de Dados usa o método Put HTTP para atualizar dados através de um serviço da Web REST.
