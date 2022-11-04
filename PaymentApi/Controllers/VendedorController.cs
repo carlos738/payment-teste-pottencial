@@ -19,7 +19,7 @@ namespace PaymentApi.Controllers
             _VendedorContext = VendedorContext;
         }
 
-        [HttpGet("Visualizar_Vendedor_Por_Id{id}")]
+        [HttpGet("Visualizar vendedor por Id{id}")]
         public IActionResult ObterVendedorPorId(int id)
         {
             var Vendedor = _VendedorContext.Vendedor.Find(id);
@@ -30,7 +30,7 @@ namespace PaymentApi.Controllers
             return Ok(Vendedor);
         }
 
-        [HttpPost("Adicionar_Um_Vendedor")]
+        [HttpPost("Adicionar um vendedor")]
         public IActionResult AdicionarVendedor(Vendedores Vendedor)
         {
             _VendedorContext.Add(Vendedor);

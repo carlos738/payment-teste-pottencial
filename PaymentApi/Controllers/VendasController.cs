@@ -31,7 +31,7 @@ namespace PaymentApi.Controllers
 
             if (string.IsNullOrEmpty(Venda.Itens))
             {
-                return BadRequest(new { Erro = "O item não pode estar vazio" });
+                return BadRequest(new { Erro = "Este item não pode ser vazio" });
             }
 
             Venda.StatusVenda = EnumStatusVenda.Aguardando_Pagamento;
@@ -50,7 +50,7 @@ namespace PaymentApi.Controllers
                 return NotFound();
 
             if(Venda.Data == DateTime.MinValue)
-                return BadRequest(new { Erro = "A data da compra não pode estar vazia" });
+                return BadRequest(new { Erro = "A data da compra não pode ficar vazia" });
 
             VendaBanco.Data = Venda.Data;
             VendaBanco.IdVendedor = Venda.IdVendedor;
@@ -58,9 +58,9 @@ namespace PaymentApi.Controllers
             
             if(Venda.StatusVenda == EnumStatusVenda.Aguardando_Pagamento)
             {
-                if(status != EnumStatusVenda.Pagamento_Aprovado && status != EnumStatusVenda.Cancelada)
+                if(status == EnumStatusVenda.Pagamento_Aprovado && status != EnumStatusVenda.Cancelada)
                 {
-                    return BadRequest(new { Erro = "Atualização invalida. Verifique se o status da venda que quer atualizar está correto."});
+                    return BadRequest(new { Erro = "O pagamento foi aprovado portanto a venda não pode ser cancelada."});
                 }
             } 
 
@@ -68,17 +68,18 @@ namespace PaymentApi.Controllers
             {
                 if(status != EnumStatusVenda.Enviado_para_Transportadora && status != EnumStatusVenda.Cancelada)
                 {
-                    return BadRequest(new { Erro = "Atualização invalida. Verifique se o status da venda que quer atualizar está correto."});
+                    return BadRequest(new { Erro = "Atualização invalida. Verifique se o status da venda que você quer atualizar está correto."});
                 }
             }
 
             if(Venda.StatusVenda == EnumStatusVenda.Enviado_para_Transportadora)
             {
-                if(status != EnumStatusVenda.Entregue)
+                if(status == EnumStatusVenda.Entregue)
                 {
                     return BadRequest(new { Erro = "Atualização invalida. Verifique se o status da venda que quer atualizar está correto."});
                 }
             }
+
             
             VendaBanco.StatusVenda = status;
             _VendasContext.Vendas.Update(VendaBanco);
@@ -99,8 +100,21 @@ namespace PaymentApi.Controllers
 
             return Ok(venda);
         }
+        [HttpGet("Recebido")]
+        public IActionResult ObterPorId(int id)
+
+        {
+            var venda = _VendasContext.Vendas.Find(id);
+            if (venda != null)
+            {
+                return NotFound();
+            }
+            return Ok(venda);
+        }   
+        
+    }   
 
 }
 
 
-}
+
