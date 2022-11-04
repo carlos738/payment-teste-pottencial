@@ -33,3 +33,16 @@
 - Boas práticas e princípios como SOLID, DDD (opcional), DRY, KISS;
 - Testes unitários;
 - Uso correto do padrão REST;
+
+
+
+Minha implementação(conclusão):
+
+Este desafio de projeto foi baseado na contstrução de uma API de pagamento onde usei os conhecimentos adquiridos durante o processo de aprendizagem no bootcamp.
+Criando uma Api fincional usando os métodos:
+HttPut:
+O Serviço de Integração de Dados usa o método Put HTTP para atualizar dados através de um serviço da Web REST.
+Método HttpGet: é usado para solicitar dados de recursos especificados. Ele envia um corpo vazio para o servidor e pede para obter recursos. Se os dados do formulário forem enviados usando o método GET, os dados enviados pelo servidor serão anexados ao URL da página. Suas requests têm algumas restrições de comprimento. Não é usado para modificação. 
+Método HttpPost:é usado para enviar dados a um servidor para criar e atualizar um recurso. Os dados solicitados usando o método POST são anexados ao corpo da solicitação HTTP em vez do URL da página. Sua solicitação não tem restrições quanto ao comprimento dos dados. 
+E através do uso do EntityFramework e MicrosoftEntityFramework.SqlServer e com o uso do MSqlSerer Studio gerando um banco de dados para a criação de tabelas no nosso banco de dados assim juntamente com os conhecimentos adquiridos consegui criar essa APi onde se passa todas as etapas de uma compra online.
+
